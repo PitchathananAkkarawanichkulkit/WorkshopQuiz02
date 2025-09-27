@@ -1,0 +1,1352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>website04</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sansita+Swashed:wght@300..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sansita+Swashed:wght@300..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sansita+Swashed:wght@300..900&display=swap');
+
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .grit-container {
+            /* width: 100vw; */
+            /* height: 100vh; */
+            display: grid;
+            align-items: start;
+            justify-items: center;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto auto auto auto auto auto auto auto;
+            grid-template-areas:
+                "item01"
+                "item02"
+                "item03"
+                "item04"
+                "item05"
+                "item06"
+                "item07"
+                "item08";
+        }
+
+        .item01 {
+            background-image: url('imagewebsite04/Rectangle 10.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 1520px;
+            height: 813px;
+        }
+
+        .logo {
+            position: absolute;
+            width: 87px;
+            height: 99px;
+            margin-top: 19px;
+            margin-left: 35px;
+        }
+
+        .headbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 293px;
+            margin-top: 61px;
+            width: 550px;
+            height: 15px;
+
+        }
+
+        .headbar a {
+            text-decoration: none;
+            color: #ffffff;
+            font-family: Poppins;
+            font-size: 22px;
+            font-weight: SemiBold;
+        }
+
+        #Home {
+            color: #E9BD8C;
+        }
+
+        #child-header-info {
+            position: absolute;
+            font-family: Inter;
+            font-size: 24px;
+            font-weight: Semi bold;
+            color: #E9BD8C;
+            width: 167px;
+            height: 17px;
+            margin-top: 200px;
+            margin-left: 83px;
+        }
+
+        #child-header-info1 {
+            position: absolute;
+            font-family: Sansita Swashed;
+            font-size: 74px;
+            font-weight: Regular;
+            width: 424px;
+            height: 148px;
+            margin-top: 230px;
+            margin-left: 80px;
+            color: #ffffff;
+        }
+
+        .btn1 {
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .btn1 div {
+            position: absolute;
+            color: #E9BD8C;
+            font-family: Inter;
+            font-size: 24px;
+            font-weight: Semi bold;
+            margin-top: 495px;
+            margin-left: 293px;
+            width: 162.69px;
+            height: 66.81px;
+        }
+
+        button {
+            width: 194px;
+            height: 65px;
+            margin-top: 460px;
+            margin-left: 80px;
+            border: 1px solid #000000;
+            border-radius: 8px;
+            background-color: #933C24;
+            font-family: Inter;
+            font-size: 24px;
+            font-weight: Semi bold;
+            color: #ffffff;
+        }
+
+        .subject-item02 {
+            font-family: Sansita Swashed;
+            font-size: 64px;
+            color: #111111;
+            font-weight: 600;
+            width: 400px;
+            height: 40px;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+
+        .grid-container-item02 {
+            width: 1120px;
+            height: 842px;
+            display: grid;
+            place-items: center;
+            margin-top: 150px;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:
+                "sub1-grid-item2" "sub2-grid-item2" "sub3-grid-item2"
+                "sub4-grid-item2" "sub5-grid-item2" "sub6-grid-item2";
+        }
+
+        .sub1-grid-item02 {
+
+            position: relative;
+            /* กำหนดให้เป็นจุดอ้างอิง */
+            overflow: hidden;
+            /* ซ่อนส่วนที่เกินจากขอบ */
+            width: 360px;
+            height: 411px;
+        }
+
+        .sub1-background {
+            width: 360px;
+            height: 411px;
+            position: absolute;
+        }
+
+        .sub1-img1 {
+            position: absolute;
+            /*ทำให้ภาพลอยอยู่เหนือพื้นหลัง */
+            width: 226px;
+            height: 223px;
+            transform: translateX(-50%);
+            top: 6%;
+            left: 50%;
+        }
+
+        .sub1-flex-item02 {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 275px;
+            height: 50px;
+            transform: translateX(-50%);
+            top: 60%;
+            left: 49%;
+
+        }
+
+        .sub1-price1 {
+            font-family: Inter;
+            font-size: 24px;
+            font-style: Semi Bold;
+            font-weight: 600;
+            color: #ffffff;
+            width: 108px;
+            height: 17px;
+        }
+
+        .sub1-icon1 {
+            width: 39px;
+            height: 39px;
+            border: 1px solid #F5F5F5;
+            border-radius: 100px;
+            font-family: Inter;
+            font-size: 20px;
+            color: #F5F5F5;
+            text-align: center;
+        }
+
+        .sub1-flex1-item2 {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transform: translateX(-50%);
+            top: 70%;
+            left: 50%;
+            width: 280px;
+            height: 40px;
+        }
+
+        .sub1-detail {
+            font-family: Inter;
+            font-size: 24px;
+            color: #ffffff;
+            font-style: Medium;
+            font-weight: 500;
+            margin-top: 130px;
+        }
+
+        .sub1-Addbtn {
+            width: 71px;
+            height: 49px;
+            background-color: #933C24;
+            border-radius: 4px;
+            font-family: Inter;
+            font-size: 24px;
+            margin-top: 90px;
+
+
+        }
+
+        .sub2-grid-item02 {
+            position: relative;
+            /* กำหนดให้เป็นจุดอ้างอิง */
+            overflow: hidden;
+            /* ซ่อนส่วนที่เกินจากขอบ */
+            width: 360px;
+            height: 411px;
+        }
+
+        .sub2-img2 {
+            position: absolute;
+            /*ทำให้ภาพลอยอยู่เหนือพื้นหลัง */
+            width: 226px;
+            height: 223px;
+            transform: translateX(-50%);
+            top: 6%;
+            left: 50%;
+        }
+
+        .sub2-flex-item02 {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 275px;
+            height: 50px;
+            transform: translateX(-50%);
+            top: 60%;
+            left: 49%;
+
+        }
+
+        .sub2-price1 {
+            font-family: Inter;
+            font-size: 24px;
+            font-style: Semi Bold;
+            font-weight: 600;
+            color: #ffffff;
+            width: 108px;
+            height: 17px;
+        }
+
+        .sub2-icon1 {
+            width: 39px;
+            height: 39px;
+            border: 1px solid #F5F5F5;
+            border-radius: 100px;
+            font-family: Inter;
+            font-size: 20px;
+            color: #F5F5F5;
+            text-align: center;
+        }
+
+        .sub2-flex1-item2 {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transform: translateX(-50%);
+            top: 70%;
+            left: 50%;
+            width: 280px;
+            height: 40px;
+        }
+
+        .sub2-detail {
+            font-family: Inter;
+            font-size: 24px;
+            color: #ffffff;
+            font-style: Medium;
+            font-weight: 500;
+            margin-top: 130px;
+        }
+
+        .sub2-Addbtn {
+            width: 71px;
+            height: 49px;
+            background-color: #933C24;
+            border-radius: 4px;
+            font-family: Inter;
+            font-size: 24px;
+            margin-top: 90px;
+        }
+
+        .sub3-grid-item02 {
+            position: relative;
+            /* กำหนดให้เป็นจุดอ้างอิง */
+            overflow: hidden;
+            /* ซ่อนส่วนที่เกินจากขอบ */
+            width: 360px;
+            height: 411px;
+        }
+
+        .sub3-img2 {
+            position: absolute;
+            /*ทำให้ภาพลอยอยู่เหนือพื้นหลัง */
+            width: 226px;
+            height: 223px;
+            transform: translateX(-50%);
+            top: 6%;
+            left: 50%;
+        }
+
+        .sub3-flex-item02 {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 275px;
+            height: 50px;
+            transform: translateX(-50%);
+            top: 60%;
+            left: 49%;
+
+        }
+
+        .sub3-price1 {
+            font-family: Inter;
+            font-size: 24px;
+            font-style: Semi Bold;
+            font-weight: 600;
+            color: #ffffff;
+            width: 108px;
+            height: 17px;
+        }
+
+        .sub3-icon1 {
+            width: 39px;
+            height: 39px;
+            border: 1px solid #F5F5F5;
+            border-radius: 100px;
+            font-family: Inter;
+            font-size: 20px;
+            color: #F5F5F5;
+            text-align: center;
+        }
+
+        .sub3-flex1-item2 {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transform: translateX(-50%);
+            top: 70%;
+            left: 50%;
+            width: 280px;
+            height: 40px;
+        }
+
+        .sub3-detail {
+            font-family: Inter;
+            font-size: 24px;
+            color: #ffffff;
+            font-style: Medium;
+            font-weight: 500;
+            margin-top: 130px;
+        }
+
+        .sub3-Addbtn {
+            width: 71px;
+            height: 49px;
+            background-color: #933C24;
+            border-radius: 4px;
+            font-family: Inter;
+            font-size: 24px;
+            margin-top: 90px;
+        }
+
+        .sub4-grid-item02 {
+            position: relative;
+            /* กำหนดให้เป็นจุดอ้างอิง */
+            overflow: hidden;
+            /* ซ่อนส่วนที่เกินจากขอบ */
+            width: 360px;
+            height: 411px;
+        }
+
+        .sub4-img2 {
+            position: absolute;
+            /*ทำให้ภาพลอยอยู่เหนือพื้นหลัง */
+            width: 226px;
+            height: 223px;
+            transform: translateX(-50%);
+            top: 6%;
+            left: 50%;
+        }
+
+        .sub4-flex-item02 {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 275px;
+            height: 50px;
+            transform: translateX(-50%);
+            top: 60%;
+            left: 49%;
+
+        }
+
+        .sub4-price1 {
+            font-family: Inter;
+            font-size: 24px;
+            font-style: Semi Bold;
+            font-weight: 600;
+            color: #ffffff;
+            width: 108px;
+            height: 17px;
+        }
+
+        .sub4-icon1 {
+            width: 39px;
+            height: 39px;
+            border: 1px solid #F5F5F5;
+            border-radius: 100px;
+            font-family: Inter;
+            font-size: 20px;
+            color: #F5F5F5;
+            text-align: center;
+        }
+
+        .sub4-flex1-item2 {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transform: translateX(-50%);
+            top: 70%;
+            left: 50%;
+            width: 280px;
+            height: 40px;
+        }
+
+        .sub4-detail {
+            font-family: Inter;
+            font-size: 24px;
+            color: #ffffff;
+            font-style: Medium;
+            font-weight: 500;
+            margin-top: 130px;
+        }
+
+        .sub4-Addbtn {
+            width: 71px;
+            height: 49px;
+            background-color: #933C24;
+            border-radius: 4px;
+            font-family: Inter;
+            font-size: 24px;
+            margin-top: 90px;
+        }
+
+        .sub5-grid-item02 {
+            position: relative;
+            /* กำหนดให้เป็นจุดอ้างอิง */
+            overflow: hidden;
+            /* ซ่อนส่วนที่เกินจากขอบ */
+            width: 360px;
+            height: 411px;
+        }
+
+        .sub5-img2 {
+            position: absolute;
+            /*ทำให้ภาพลอยอยู่เหนือพื้นหลัง */
+            width: 226px;
+            height: 223px;
+            transform: translateX(-50%);
+            top: 6%;
+            left: 50%;
+        }
+
+        .sub5-flex-item02 {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 275px;
+            height: 50px;
+            transform: translateX(-50%);
+            top: 60%;
+            left: 49%;
+
+        }
+
+        .sub5-price1 {
+            font-family: Inter;
+            font-size: 24px;
+            font-style: Semi Bold;
+            font-weight: 600;
+            color: #ffffff;
+            width: 108px;
+            height: 17px;
+        }
+
+        .sub5-icon1 {
+            width: 39px;
+            height: 39px;
+            border: 1px solid #F5F5F5;
+            border-radius: 100px;
+            font-family: Inter;
+            font-size: 20px;
+            color: #F5F5F5;
+            text-align: center;
+        }
+
+        .sub5-flex1-item2 {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transform: translateX(-50%);
+            top: 70%;
+            left: 50%;
+            width: 280px;
+            height: 40px;
+        }
+
+        .sub5-detail {
+            font-family: Inter;
+            font-size: 24px;
+            color: #ffffff;
+            font-style: Medium;
+            font-weight: 500;
+            margin-top: 130px;
+        }
+
+        .sub5-Addbtn {
+            width: 71px;
+            height: 49px;
+            background-color: #933C24;
+            border-radius: 4px;
+            font-family: Inter;
+            font-size: 24px;
+            margin-top: 90px;
+        }
+
+        .sub6-grid-item02 {
+            position: relative;
+            /* กำหนดให้เป็นจุดอ้างอิง */
+            overflow: hidden;
+            /* ซ่อนส่วนที่เกินจากขอบ */
+            width: 360px;
+            height: 411px;
+        }
+
+        .sub6-img2 {
+            position: absolute;
+            /*ทำให้ภาพลอยอยู่เหนือพื้นหลัง */
+            width: 226px;
+            height: 223px;
+            transform: translateX(-50%);
+            top: 6%;
+            left: 50%;
+        }
+
+        .sub6-flex-item02 {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 275px;
+            height: 50px;
+            transform: translateX(-50%);
+            top: 60%;
+            left: 49%;
+
+        }
+
+        .sub6-price1 {
+            font-family: Inter;
+            font-size: 24px;
+            font-style: Semi Bold;
+            font-weight: 600;
+            color: #ffffff;
+            width: 108px;
+            height: 17px;
+        }
+
+        .sub6-icon1 {
+            width: 39px;
+            height: 39px;
+            border: 1px solid #F5F5F5;
+            border-radius: 100px;
+            font-family: Inter;
+            font-size: 20px;
+            color: #F5F5F5;
+            text-align: center;
+        }
+
+        .sub6-flex1-item2 {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            transform: translateX(-50%);
+            top: 70%;
+            left: 50%;
+            width: 280px;
+            height: 40px;
+        }
+
+        .sub6-detail {
+            font-family: Inter;
+            font-size: 24px;
+            color: #ffffff;
+            font-style: Medium;
+            font-weight: 500;
+            margin-top: 130px;
+        }
+
+        .sub6-Addbtn {
+            width: 71px;
+            height: 49px;
+            background-color: #933C24;
+            border-radius: 4px;
+            font-family: Inter;
+            font-size: 24px;
+            margin-top: 90px;
+        }
+
+        .item03 {
+            background-image: url('./imagewebsite04/Rectangle 45.png');
+            /* background-position: center; */
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 1500px;
+            height: 550px;
+            margin-top: 150px;
+
+        }
+
+        .Promotion-item03 {
+            position: absolute;
+            width: 343px;
+            height: 301px;
+            margin-left: 580px;
+            margin-top: 100px;
+
+
+        }
+
+        .discount-item03 {
+            font-family: Sansita Swashed;
+            font-size: 48px;
+            font-weight: 500;
+            color: #933C24;
+            text-align: center;
+        }
+
+        .detail-item03 {
+            font-family: Inter;
+            font-size: 24px;
+            font-weight: 400;
+            width: 343px;
+            height: 74px;
+            text-align: center;
+            margin-top: 25px;
+            margin-bottom: 30px;
+
+
+        }
+
+        .Learn-More-item03 {
+            height: 63px;
+            width: 202px;
+            border-radius: 10px;
+            background-color: #933C24;
+            font-family: Inter;
+            font-size: 24px;
+            font-weight: 600;
+            color: #F9F6F1;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .item04 {
+            margin-top: 130px;
+        }
+
+        .subject-item04 {
+            font-family: Sansita Swashed;
+            font-size: 64px;
+            font-weight: 600;
+            color: #111111;
+            text-align: center;
+        }
+
+        .menu-bar-item04 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 698px;
+            height: 43px;
+            font-family: Poppins;
+            font-size: 24px;
+            font-weight: 600;
+            margin-top: 100px;
+            margin-left: 200px;
+        }
+
+        .menu-bar-item04 a {
+            color: #111111;
+            text-decoration: none;
+            padding-bottom: 5px;
+            /* สำคัญ: เพิ่มระยะห่างด้านล่างข้อความ เพื่อเว้นที่ให้เส้นขีด */
+            border-bottom: 3px solid transparent;
+            /* กำหนดเส้นขอบที่ "โปร่งใส" ไว้ล่วงหน้า */
+            transition: border-bottom 0.3s ease;
+            /* ทำให้การเปลี่ยนสไตล์ราบรื่น */
+        }
+
+        .menu-bar-item04 a:hover {
+            border-bottom: 5px solid #933C24;
+        }
+
+        .line-item04 {
+            width: 1120px;
+            height: 0px;
+            color: #D9D9D9;
+            margin: auto;
+            margin-top: 10px;
+        }
+
+        .item05 {
+            margin-top: 150px;
+        }
+
+        .grid-container-item05 {
+            width: 1120px;
+            height: 720px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:
+                "sub-grid1-item05" "sub-grid2-item05" "sub-grid3-item05"
+                "sub-grid4-item05" "sub-grid5-item05" "sub-grid6-item05";
+        }
+
+        .sub-grid1-item05 {
+            width: 360px;
+            height: 350;
+            border-radius: 8px;
+        }
+
+        .item06 {
+            background-image: url('./imagewebsite04/Rectangle\ 41.png');
+            /* background-position: center; */
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 1500px;
+            height: 550px;
+            margin-top: 150px;
+        }
+
+        .aboud-us-item06 {
+            position: absolute;
+            width: 343px;
+            height: 301px;
+            margin-left: 600px;
+            margin-top: 130px;
+
+
+        }
+
+        .aboud-item06 {
+            font-family: Sansita Swashed;
+            font-size: 48px;
+            font-weight: 500;
+            color: #ffffff;
+            text-align: center;
+        }
+
+        .detail-item06 {
+            font-family: Inter;
+            font-size: 24px;
+            font-weight: 400;
+            width: 343px;
+            height: 74px;
+            text-align: center;
+            margin-top: 25px;
+            margin-bottom: 30px;
+            color: #B9B9B9;
+
+
+        }
+
+        .Read-More-item06 {
+            height: 63px;
+            width: 202px;
+            border-radius: 10px;
+            background-color: #933C24;
+            font-family: Inter;
+            font-size: 24px;
+            font-weight: 600;
+            color: #F9F6F1;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .subject-item07 {
+            font-family: Sansita Swashed;
+            font-size: 64px;
+            color: #111111;
+            font-weight: 600;
+            width: 464px;
+            height: 40px;
+            margin: 0 auto;
+
+        }
+
+        .item07 {
+            margin-top: 100px;
+        }
+
+        .grid-container-item07 {
+            width: 1120px;
+            height: 720px;
+            margin-top: 160px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas:
+                "sub-grid1-item07" "sub-grid2-item07" "sub-grid3-item07"
+                "sub-grid4-item07" "sub-grid5-item07" "sub-grid6-item07";
+        }
+
+        .sub-grid4-item07 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 350px;
+            height: 23px;
+            margin-top: 30px;
+        }
+
+        .sub-grid4-item07 div {
+            font-family: Inter;
+            font-size: 32px;
+            font-weight: 600;
+            color: #000000;
+        }
+
+        .sub-grid5-item07 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 350px;
+            height: 23px;
+            margin-top: 30px;
+        }
+
+        .sub-grid5-item07 div {
+            font-family: Inter;
+            font-size: 32px;
+            font-weight: 600;
+            color: #000000;
+        }
+
+        .sub-grid6-item07 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 350px;
+            height: 23px;
+            margin-top: 30px;
+        }
+
+        .sub-grid6-item07 div {
+            font-family: Inter;
+            font-size: 32px;
+            font-weight: 600;
+            color: #000000;
+        }
+
+        .item08 {
+            background-image: url('./imagewebsite04/Rectangle\ 75.png');
+            width: 1520px;
+            height: 633px;
+            margin-top: -150px;
+        }
+
+        .sub-flex-item08 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 1200px;
+            height: 70px;
+            margin-top: 50px;
+            margin-left: 50px;
+        }
+
+        .social {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 250px;
+            height: 100px;
+
+        }
+
+        .social div {
+            font-family: Inter;
+            font-size: 24px;
+            font-weight: 600;
+            color: #E9BD8C;
+            width: 109px;
+            height: 17px;
+        }
+
+        .sub-social {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100px;
+            height: 70px;
+            margin-top: 10px;
+            gap: 15px;
+
+        }
+
+        .sub1-flex-item08 {
+            display: flex;
+            align-items: center;
+        }
+
+        .aboud-us-item08 {
+            width: 257px;
+            height: 253px;
+            margin-left: 55px;
+            margin-top: 100px;
+        }
+
+        .About-item08 {
+            font-family: Inter;
+            font-size: 36px;
+            font-weight: 700;
+            color: #E9BD8C;
+        }
+
+        .contact-item08 {
+            font-family: Poppins;
+            font-size: 24px;
+            font-weight: 600;
+            color: #F5F5F5;
+        }
+
+        .Explore {
+            width: 257px;
+            height: 253px;
+            margin-left: 150px;
+            margin-top: 100px;
+        }
+
+        .sub-Explore-item08 {
+            font-family: Inter;
+            font-size: 36px;
+            font-weight: 700;
+            color: #E9BD8C;
+        }
+
+        .sub-Explore {
+            font-family: Poppins;
+            font-size: 24px;
+            font-weight: 600;
+            color: #F5F5F5;
+        }
+
+        .sub-Recent-News-item8 {
+            font-family: Inter;
+            font-size: 36px;
+            font-weight: 700;
+            color: #E9BD8C;
+            margin-left: 350px;
+            margin-top: 80px;
+
+        }
+
+        .sub1-Recent-News-item8 {
+            display: flex;
+            align-items: center;
+            width: 320px;
+            height: 210px;
+            gap: 20px;
+            margin-left: 350px;
+            margin-top: -30px;
+
+        }
+
+        .sub2-Recent-News-item8 h6 {
+            font-family: Poppins;
+            font-size: 18px;
+            font-weight: 400;
+            color: #E9BD8C;
+            width: 113px;
+            height: 13px;
+            margin-top: 10px;
+        }
+
+        .sub2-Recent-News-item8 h5 {
+            font-family: Poppins;
+            font-size: 24px;
+            font-weight: 400;
+            color: #F5F5F5;
+            width: 197px;
+            height: 17px;
+            margin-top: -30px;
+        }
+
+        .sub3-Recent-News-item8 {
+            display: flex;
+            align-items: center;
+            width: 320px;
+            height: 210px;
+            gap: 20px;
+            margin-left: 350px;
+            margin-top: -100px;
+
+        }
+
+        .sub4-Recent-News-item8 h6 {
+            font-family: Poppins;
+            font-size: 18px;
+            font-weight: 400;
+            color: #E9BD8C;
+            width: 113px;
+            height: 13px;
+            margin-top: 10px;
+        }
+
+        .sub4-Recent-News-item8 h5 {
+            font-family: Poppins;
+            font-size: 24px;
+            font-weight: 400;
+            color: #F5F5F5;
+            width: 197px;
+            height: 17px;
+            margin-top: -30px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="grit-container">
+        <div class="item01">
+            <div class="logo">
+                <img src="./imagewebsite04/Modrino__2_-removebg-preview 1.png" alt="logo" class="logo">
+            </div>
+            <div class="headbar">
+                <a id="Home" href="#">Home</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact Us</a>
+                <a href="#">Services</a>
+            </div>
+            <div class="heder-info">
+                <div id="child-header-info">Delicious Cafe</div>
+                <div id="child-header-info1">Sweet Treats, Perfect Eats</div>
+            </div>
+            <div class="btn1">
+                <button>Shop Now</button>
+                <div>Learn More</div>
+            </div>
+        </div>
+        <div class="item02">
+            <div class="subject-item02">
+                Top Products
+            </div>
+
+            <div class="grid-container-item02">
+                <div class="sub1-grid-item02">
+                    <img class="sub1-background" src="./imagewebsite04/Rectangle 69.png" alt="background">
+                    <img class="sub1-img1" src="./imagewebsite04/img1.png" alt="img1-sub1-grid-item02">
+
+                    <div class="sub1-flex-item02">
+                        <h5 class="sub1-price1">40 Baht</h5>
+                        <span class="sub1-icon1">i</span>
+                    </div>
+
+                    <div class="sub1-flex1-item2">
+                        <h5 class="sub1-detail">Whole Grain Bread</h5>
+                        <button class="sub1-Addbtn">Add</button>
+                    </div>
+                </div>
+                <div class="sub2-grid-item02">
+                    <img class="sub2-background" src="./imagewebsite04/Rectangle 69.png" alt="background">
+                    <img class="sub2-img2" src="./imagewebsite04/P2 (2).png" alt="img2">
+
+                    <div class="sub2-flex-item02">
+                        <h5 class="sub1-price1">40 Baht</h5>
+                        <span class="sub1-icon1">i</span>
+                    </div>
+
+                    <div class="sub2-flex1-item2">
+                        <h5 class="sub2-detail">Whole Grain Bread</h5>
+                        <button class="sub2-Addbtn">Add</button>
+                    </div>
+                </div>
+                <div class="sub3-grid-item02">
+                    <img class="sub3-background" src="./imagewebsite04/Rectangle 69.png" alt="background">
+                    <img class="sub3-img2" src="./imagewebsite04/P3 (2).png" alt="img2">
+
+                    <div class="sub3-flex-item02">
+                        <h5 class="sub3-price1">40 Baht</h5>
+                        <span class="sub3-icon1">i</span>
+                    </div>
+
+                    <div class="sub3-flex1-item2">
+                        <h5 class="sub3-detail">Whole Grain Bread</h5>
+                        <button class="sub3-Addbtn">Add</button>
+                    </div>
+                </div>
+                <div class="sub4-grid-item02">
+                    <img class="sub4-background" src="./imagewebsite04/Rectangle 69.png" alt="background">
+                    <img class="sub4-img2" src="./imagewebsite04/P4.png" alt="img2">
+
+                    <div class="sub4-flex-item02">
+                        <h5 class="sub4-price1">40 Baht</h5>
+                        <span class="sub4-icon1">i</span>
+                    </div>
+
+                    <div class="sub4-flex1-item2">
+                        <h5 class="sub4-detail">Whole Grain Bread</h5>
+                        <button class="sub4-Addbtn">Add</button>
+                    </div>
+                </div>
+                <div class="sub5-grid-item02">
+                    <img class="sub5-background" src="./imagewebsite04/Rectangle 69.png" alt="background">
+                    <img class="sub5-img2" src="./imagewebsite04/P6.png" alt="img2">
+
+                    <div class="sub5-flex-item02">
+                        <h5 class="sub5-price1">40 Baht</h5>
+                        <span class="sub5-icon1">i</span>
+                    </div>
+
+                    <div class="sub5-flex1-item2">
+                        <h5 class="sub5-detail">Whole Grain Bread</h5>
+                        <button class="sub5-Addbtn">Add</button>
+                    </div>
+                </div>
+                <div class="sub6-grid-item02">
+                    <img class="sub6-background" src="./imagewebsite04/Rectangle 69.png" alt="background">
+                    <img class="sub6-img2" src="./imagewebsite04/P5.png" alt="img2">
+
+                    <div class="sub6-flex-item02">
+                        <h5 class="sub6-price1">40 Baht</h5>
+                        <span class="sub6-icon1">i</span>
+                    </div>
+
+                    <div class="sub6-flex1-item2">
+                        <h5 class="sub6-detail">Whole Grain Bread</h5>
+                        <button class="sub6-Addbtn">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="item03">
+            <div class="Promotion-item03">
+                <div class="discount-item03">20% Off Your First Order</div>
+                <div class="detail-item03">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt rem.</div>
+                <button class="Learn-More-item03">Learn More</button>
+            </div>
+        </div>
+        <div class="item04">
+            <div class="subject-item04">Explore More</div>
+            <div class="menu-bar-item04">
+                <a href="#">Cake</a>
+                <a href="#">Muffins</a>
+                <a href="#">Croissant</a>
+                <a href="#">Bread</a>
+                <a href="#">Tart</a>
+                <a href="#">Favorite</a>
+            </div>
+            <hr class="line-item04">
+        </div>
+        <div class="item05">
+            <div class="grid-container-item05">
+                <div class="sub-grid1-item05">
+                    <img src="./imagewebsite04/Rectangle 20.png" alt="img1-item05">
+                </div>
+                <div class="sub-grid2-item05">
+                    <img src="./imagewebsite04/Rectangle 21.png" alt="img2-item05">
+                </div>
+                <div class="sub-grid3-item05">
+                    <img src="./imagewebsite04/Rectangle 22.png" alt="img3-item05">
+                </div>
+                <div class="sub-grid4-item05">
+                    <img src="./imagewebsite04/Rectangle 25.png" alt="img4-item05">
+                </div>
+                <div class="sub-grid5-item05">
+                    <img src="./imagewebsite04/Rectangle 23.png" alt="img5-item05">
+                </div>
+                <div class="sub-grid6-item05">
+                    <img src="./imagewebsite04/Rectangle 24.png" alt="img6-item05">
+                </div>
+            </div>
+
+        </div>
+        <div class="item06">
+            <div class="aboud-us-item06">
+                <div class="aboud-item06">About us</div>
+                <div class="detail-item06">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt rem.</div>
+                <button class="Read-More-item06">Read More</button>
+            </div>
+        </div>
+        <div class="item07">
+            <div class="subject-item07">
+                Featured Treats
+            </div>
+
+            <div class="grid-container-item07">
+                <div class="sub-grid1-item07">
+                    <img src="./imagewebsite04/Rectangle 156.png" alt="img1-item07">
+                </div>
+                <div class="sub-grid2-item07">
+                    <img src="./imagewebsite04/Rectangle 153.png" alt="img2-item07">
+                </div>
+                <div class="sub-grid3-item07">
+                    <img src="./imagewebsite04/Rectangle 154.png" alt="img3-item07">
+                </div>
+                <div class="sub-grid4-item07">
+                    <div>Puff Pastry </div>
+                    <div>8 Baht </div>
+                </div>
+                <div class="sub-grid5-item07">
+                    <div>Doughnuts </div>
+                    <div>8 Baht </div>
+                </div>
+                <div class="sub-grid6-item07">
+                    <div>Brownies </div>
+                    <div>8 Baht </div>
+                </div>
+            </div>
+        </div>
+        <div class="item08">
+            <div class="sub-flex-item08">
+                <div class="logo1">
+                    <img src="./imagewebsite04/Modrino__2_-removebg-preview 1.png" alt="logo">
+                </div>
+                <div class="social">
+                    <div>Follow us</div>
+                    <div class="sub-social">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-pinterest"></i>
+                        <i class="fa-solid fa-phone"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="sub1-flex-item08">
+                <div class="aboud-us-item08">
+                    <div class="About-item08">About Us</div>
+                    <div class="contact-item08">(02) 807-4500</div>
+                    <div class="contact-item08">info@sau.ac.th</div>
+                    <div class="contact-item08">19/1 Phetkasem Road</div>
+                    <div class="contact-item08">Nongkham Bangkok</div>
+                    <div class="contact-item08">10160</div>
+                </div>
+
+                <div class="Explore">
+                    <div class="sub-Explore-item08">Explore</div>
+                    <div class="sub-Explore">Home</div>
+                    <div class="sub-Explore">Blog</div>
+                    <div class="sub-Explore">Contact us</div>
+                    <div class="sub-Explore">Services</div>
+                </div>
+
+                <div class="Recent-News">
+                    <div class="sub-Recent-News-item8">
+                        Recent News
+                    </div>
+                    <div class="sub1-Recent-News-item8">
+                        <div>
+                            <img src="./imagewebsite04/Rectangle 157.png" alt="">
+                        </div>
+                        <div class="sub2-Recent-News-item8">
+                            <h6>June 14,2025</h6>
+                            <h5>Puff pastry bliss.</h5>
+                        </div>
+                    </div>
+                    <div class="sub3-Recent-News-item8">
+                        <div>
+                            <img src="./imagewebsite04/Rectangle 158.png" alt="">
+                        </div>
+                        <div class="sub4-Recent-News-item8">
+                            <h6>June 14,2025</h6>
+                            <h5>Puff pastry bliss.</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
