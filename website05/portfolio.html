@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sansita+Swashed:wght@300..900&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Sansita+Swashed:wght@300..900&display=swap");
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        min-height: 100vh;
+        background-color: #000000;
+      }
+
+      .grid-container {
+        place-items: center;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas:
+          "grid-item1 grid-item1"
+          "grid-item2 grid-item3"
+          "grid-item4 grid-item5"
+          "grid-item6 grid-item7"
+          "grid-item8 grid-item9";
+      }
+
+      .grid-item1 {
+        grid-area: grid-item1;
+        place-items: center;
+      }
+
+      .grid-item2 {
+        grid-area: grid-item2;
+        place-items: center;
+      }
+
+      .grid-item3 {
+        grid-area: grid-item3;
+        place-items: center;
+      }
+
+      .grid-item4 {
+        grid-area: grid-item4;
+        place-items: center;
+      }
+
+      .grid-item5 {
+        grid-area: grid-item5;
+        place-items: center;
+      }
+
+      .grid-item6 {
+        grid-area: grid-item6;
+        place-items: center;
+      }
+
+      .grid-item7 {
+        grid-area: grid-item7;
+        place-items: center;
+      }
+
+      .grid-item8 {
+        grid-area: grid-item8;
+        place-items: center;
+      }
+
+      .grid-item9 {
+        grid-area: grid-item9;
+        place-items: center;
+      }
+
+      .main-navigation {
+        background-color: #030000;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 1280px;
+        height: 173px;
+        margin-top: -1px;
+      }
+
+      .nav-bar {
+        width: 1000px;
+        height: 50px;
+        text-align: center;
+        margin-top: 30px;
+      }
+
+      .websitename {
+        font-family: Inter;
+        font-size: 40px;
+        font-weight: 700;
+        width: 500px;
+        height: 48px;
+        color: #ffffff;
+        text-align: center;
+      }
+
+      .nav-link {
+        width: 150px;
+        height: 24px;
+        margin-left: 140px;
+        font-family: Inter;
+        font-size: 20px;
+        font-style: Semi Bold;
+        font-weight: 600;
+        color: #ffffff;
+        text-decoration: none;
+      }
+
+      .nav-bar a:hover {
+        color: #0411bd;
+      }
+
+      .subject-item2 {
+        font-family: Inter;
+        font-size: 40px;
+        font-weight: 700;
+        width: 500px;
+        height: 48px;
+        color: #ffffff;
+        margin-top: 15px;
+        margin-bottom: 25px;
+        margin-left: 250px;
+      }
+
+      .grid-item2 img {
+        margin-left: 200px;
+      }
+
+      .subject-item3 {
+        font-family: Inter;
+        font-size: 24px;
+        font-weight: 600;
+        width: 500px;
+        height: 48px;
+        color: #ffffff;
+        margin-top: 80px;
+        margin-left: 170px;
+      }
+
+      .description-item3 {
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 400;
+        width: 533px;
+        height: 216px;
+        color: #ffffff;
+        margin-top: 10px;
+        margin-right: 100px;
+      }
+
+      .btn-item3 {
+        width: 400px;
+        height: 30px;
+        margin-top: 25px;
+        display: flex;
+        align-items: center;
+      }
+
+      .btn-item3 button {
+        width: 130px;
+        height: 40px;
+        border: 1px solid #ffffff;
+        border-radius: 50px;
+        background-color: #000000;
+        font-family: Inter;
+        font-size: 20px;
+        color: #ffffff;
+        font-weight: 600;
+      }
+
+      .btn-item3 i {
+        color: #ffffff;
+        font-size: 40px;
+        margin-left: 60px;
+      }
+
+      .btn-item3 div {
+        color: #ffffff;
+        font-family: Inter;
+        font-weight: 600;
+        font-size: 24px;
+      }
+
+      .subject-item4 {
+        font-family: Inter;
+        font-size: 24px;
+        font-weight: 600;
+        width: 500px;
+        height: 48px;
+        color: #ffffff;
+        margin-top: 150px;
+        text-align: center;
+        margin-left: 70px;
+      }
+
+      .description-item4 {
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 400;
+        width: 533px;
+        height: 216px;
+        color: #ffffff;
+        margin-top: 10px;
+        margin-left: 120px;
+      }
+
+      .btn-item4 {
+        width: 400px;
+        height: 30px;
+        margin-top: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 70px;
+      }
+
+      .btn-item4 button {
+        width: 130px;
+        height: 40px;
+        border: 1px solid #ffffff;
+        border-radius: 50px;
+        background-color: #000000;
+        font-family: Inter;
+        font-size: 20px;
+        color: #ffffff;
+        font-weight: 600;
+      }
+
+      .btn-item4 i {
+        color: #ffffff;
+        font-size: 40px;
+        margin-left: 60px;
+      }
+
+      .btn-item4 div {
+        color: #ffffff;
+        font-family: Inter;
+        font-weight: 600;
+        font-size: 24px;
+      }
+
+      .grid-item5 img {
+        margin-right: 100px;
+        margin-top: 150px;
+      }
+
+      .grid-item6 img{
+        margin-top: 200px;
+      }
+
+      .subject-item7 {
+        font-family: Inter;
+        font-size: 24px;
+        font-weight: 600;
+        width: 500px;
+        height: 48px;
+        color: #ffffff;
+        margin-top: 150px;
+        text-align: center;
+        margin-right: 150px;
+        
+      }
+
+      .description-item7 {
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 400;
+        width: 533px;
+        height: 216px;
+        color: #ffffff;
+        margin-top: 10px;
+        margin-right: 100px;
+      }
+
+      .btn-item7 {
+        width: 400px;
+        height: 30px;
+        margin-top: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 150px;
+      }
+
+      .btn-item7 button {
+        width: 130px;
+        height: 40px;
+        border: 1px solid #ffffff;
+        border-radius: 50px;
+        background-color: #000000;
+        font-family: Inter;
+        font-size: 20px;
+        color: #ffffff;
+        font-weight: 600;
+      }
+
+      .btn-item7 i {
+        color: #ffffff;
+        font-size: 40px;
+        margin-left: 60px;
+      }
+
+      .btn-item7 div {
+        color: #ffffff;
+        font-family: Inter;
+        font-weight: 600;
+        font-size: 24px;
+      }
+
+      .subject-item8 {
+        font-family: Inter;
+        font-size: 24px;
+        font-weight: 600;
+        width: 500px;
+        height: 48px;
+        color: #ffffff;
+        text-align: center;
+        margin-left: 50px;
+        
+        
+      }
+
+      .description-item8 {
+        font-family: Inter;
+        font-size: 20px;
+        font-weight: 400;
+        width: 533px;
+        height: 216px;
+        color: #ffffff;
+        margin-top: 10px;
+        margin-left: 100px;
+        
+      }
+
+      .btn-item8 {
+        width: 400px;
+        height: 30px;
+        margin-top: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 50px;
+      }
+
+      .btn-item8 button {
+        width: 130px;
+        height: 40px;
+        border: 1px solid #ffffff;
+        border-radius: 50px;
+        background-color: #000000;
+        font-family: Inter;
+        font-size: 20px;
+        color: #ffffff;
+        font-weight: 600;
+      }
+
+      .btn-item8 i {
+        color: #ffffff;
+        font-size: 40px;
+        margin-left: 60px;
+      }
+
+      .btn-item8 div {
+        color: #ffffff;
+        font-family: Inter;
+        font-weight: 600;
+        font-size: 24px;
+      }
+
+      .grid-item9 img{
+        margin-top: 150px;
+        margin-right: 100px;
+        margin-bottom: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-item1">
+        <header class="main-navigation">
+          <div class="websitename">Pitchathanan Ak SAU</div>
+          <nav class="nav-bar">
+            <a class="nav-link" href="./index.html">Home</a>
+            <a class="nav-link" href="./aboutus.html">About</a>
+            <a class="nav-link" href="./portfolio.html">Portfolio</a>
+            <a class="nav-link" href="./contact.html">Let's talk</a>
+          </nav>
+        </header>
+      </div>
+      <div class="grid-item2">
+        <div class="subject-item2">Portfolio</div>
+        <img src="./images/Bikes and beards 1.png" alt="img1" />
+      </div>
+      <div class="grid-item3">
+        <div class="subject-item3">Bikes and beards</div>
+        <div class="description-item3">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt rem
+          odit labore unde nemo omnis sequi hic sit laudantium repellendus
+          recusandae vitae ea laborum, ipsa nisi eos autem. Blanditiis
+          consequuntur velit nesciunt aperiam odit excepturi repellat libero in
+          enim praesentium! Ex dicta est suscipit ipsam voluptate tempora
+          voluptatum quam distinctio minus saepe nobis nulla amet fugiat sit
+          autem deserunt asperiores vitae ea, libero sed! Libero fugit non.
+        </div>
+        <div class="btn-item3">
+          <button>View</button>
+          <i class="fa-brands fa-github"></i>
+          <div>Git code</div>
+        </div>
+      </div>
+      <div class="grid-item4">
+        <div class="subject-item4">Learnify</div>
+        <div class="description-item4">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt rem
+          odit labore unde nemo omnis sequi hic sit laudantium repellendus
+          recusandae vitae ea laborum, ipsa nisi eos autem. Blanditiis
+          consequuntur velit nesciunt aperiam odit excepturi repellat libero in
+          enim praesentium! Ex dicta est suscipit ipsam voluptate tempora
+          voluptatum quam distinctio minus saepe nobis nulla amet fugiat sit
+          autem deserunt asperiores vitae ea, libero sed! Libero fugit non.
+        </div>
+        <div class="btn-item4">
+          <button>View</button>
+          <i class="fa-brands fa-github"></i>
+          <div>Git code</div>
+        </div>
+      </div>
+      <div class="grid-item5">
+        <img src="./images/Learnify 1.png" alt="img2" />
+      </div>
+      <div class="grid-item6">
+        <img src="./images/Figma to HTML (Community) 1.png" alt="img3">
+      </div>
+      <div class="grid-item7">
+        <div class="subject-item7">Anime-X</div>
+        <div class="description-item7">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt rem
+          odit labore unde nemo omnis sequi hic sit laudantium repellendus
+          recusandae vitae ea laborum, ipsa nisi eos autem. Blanditiis
+          consequuntur velit nesciunt aperiam odit excepturi repellat libero in
+          enim praesentium! Ex dicta est suscipit ipsam voluptate tempora
+          voluptatum quam distinctio minus saepe nobis nulla amet fugiat sit
+          autem deserunt asperiores vitae ea, libero sed! Libero fugit non.
+        </div>
+        <div class="btn-item7">
+          <button>View</button>
+          <i class="fa-brands fa-github"></i>
+          <div>Git code</div>
+        </div>
+      </div>
+      <div class="grid-item8">
+         <div class="subject-item8">Tech-Z</div>
+        <div class="description-item8">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt rem
+          odit labore unde nemo omnis sequi hic sit laudantium repellendus
+          recusandae vitae ea laborum, ipsa nisi eos autem. Blanditiis
+          consequuntur velit nesciunt aperiam odit excepturi repellat libero in
+          enim praesentium! Ex dicta est suscipit ipsam voluptate tempora
+          voluptatum quam distinctio minus saepe nobis nulla amet fugiat sit
+          autem deserunt asperiores vitae ea, libero sed! Libero fugit non.
+        </div>
+        <div class="btn-item8">
+          <button>View</button>
+          <i class="fa-brands fa-github"></i>
+          <div>Git code</div>
+        </div>
+      </div>
+      <div class="grid-item9">
+        <img src="./images/EdTech 1.png" alt="img4">
+      </div>
+    </div>
+  </body>
+</html>
